@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar novo usuário</title>
+    <link rel="stylesheet" href="loja.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="acessibilidade">
+        <a class="diminuir" onclick="diminuirFonte()">
+          <i class="fas fa-minus"></i>Diminuir Letra</a
+        >
+        <a class="normal" onclick="resetarFonte()">
+          <i class="fas fa-font"></i>Normal</a
+        >
+        <a class="aumentar" onclick="aumentarFonte()">
+          <i class="fas fa-plus"></i>Aumentar Letra</a
+        >
+        <a class="escuro" onclick="modoEscuro()">
+          <i class="fas fa-adjust"></i>Contraste</a
+        >
+      </div>
+    </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../img/logo4.png"
+              alt="Descrição da imagem"
+              style="width: 150px; height: auto"
+            />
+          </a>
+        </div>
+        <ul class="nav-list">
+          <a href="login.html" class="btn">
+            <img src="../img/login.png" alt="login" class="btn-icon" /><span
+              class="btn-text"
+              >Login</span
+            >
+          </a>
+
+          <a href="loja.html" class="btn">
+            <img src="../img/tag.png" alt="produtos" class="btn-icon" /><span
+              class="btn-text"
+              >Produtos</span
+            >
+          </a>
+
+          <a href="carrinho.html" class="btn" id="carrinho">
+            <img
+              src="../img/carrinho.png"
+              alt="carrinho"
+              class="btn-icon"
+            /><span class="btn-text">Carrinho</span>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Bolos</h2>
+    <section class="produtos">
+      <div class="card bolos">
+        <img src="../produtos/bolo1.jpg" alt="bolo1" />
+        <h1>Chocolate belga</h1>
+        <span>260,00 R$</span>
+        <button onclick="adicionarAoCarrinho('Chocolate belga', 260)">
+          Comprar
+        </button>
+      </div>
+      <div class="card bolos">
+        <img src="../produtos/bolo3.jpg" alt="bolo2" />
+        <h1>Merengue com morango</h1>
+        <span>240,00 R$</span>
+        <button onclick="adicionarAoCarrinho('Merengue com morango', 240)">
+          Comprar
+        </button>
+      </div>
+      <div class="card bolos">
+        <img src="../produtos/bolo5.jpg" alt="bolo3" />
+        <h1>Red Velvet</h1>
+        <span>310,00 R$</span>
+        <button onclick="adicionarAoCarrinho('Red Velvet', 310)">
+          Comprar
+        </button>
+      </div>
+    </section>
+
+    <h2>Tortas</h2>
+    <section class="produtos">
+      <div class="card tortas">
+        <img src="../produtos/torta4.jpg" alt="torta1" />
+        <h1>Torta de ganache de chocolate</h1>
+        <span>170,00 R$</span>
+        <button
+          onclick="adicionarAoCarrinho('Torta de ganache de chocolate', 170)"
+        >
+          Comprar
+        </button>
+      </div>
+      <div class="card tortas">
+        <img src="../produtos/torta2.jpg" alt="torta2" />
+        <h1>Torta torre de morangos</h1>
+        <span>130,00 R$</span>
+        <button onclick="adicionarAoCarrinho('Torta torre de morangos', 130)">
+          Comprar
+        </button>
+      </div>
+      <div class="card tortas">
+        <img src="../produtos/torta1.jpg" alt="torta3" />
+        <h1>Torta cheesecake de limão siciliano</h1>
+        <span>140,00 R$</span>
+        <button
+          onclick="adicionarAoCarrinho('Torta cheesecake de limão siciliano', 140)"
+        >
+          Comprar
+        </button>
+      </div>
+    </section>
+
+    <h2>Cupcakes</h2>
+    <section class="produtos">
+      <div class="card cupcakes">
+        <img src="../produtos/cupcake3.jpg" alt="cupcake1" />
+        <h1>
+          Cupcakes de mirtilos <br />
+          15 unidades
+        </h1>
+        <span>160,00 R$</span>
+        <button onclick="adicionarAoCarrinho('Cupcakes de mirtilos', 160)">
+          Comprar
+        </button>
+      </div>
+      <div class="card cupcakes">
+        <img src="../produtos/cupcake4.jpg" alt="cupcake2" />
+        <h1>
+          Cupcakes de chocolate com merengue de frutas vermelhas <br />
+          15 unidades
+        </h1>
+        <span>145,00 R$</span>
+        <button
+          onclick="adicionarAoCarrinho('Cupcakes de chocolate com merengue de frutas vermelhas', 145)"
+        >
+          Comprar
+        </button>
+      </div>
+      <div class="card cupcakes">
+        <img src="../produtos/cupcake2.jpg" alt="cupcake3" />
+        <h1>
+          Cupcakes de limão <br />
+          15 unidades
+        </h1>
+        <span>140,00 R$</span>
+        <button onclick="adicionarAoCarrinho('Cupcakes de limão', 140)">
+          Comprar
+        </button>
+      </div>
+    </section>
+
+    <div id="popup-adicionado" class="popup">
+      Produto adicionado ao carrinho!
+    </div>
+
+    <script src="carrinho.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

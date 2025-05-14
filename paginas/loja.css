@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  background-color: #faf0ee;
+}
+
+/* navbar */
+a {
+  color: #23232e;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0, 7;
+}
+
+.logo img {
+  max-width: 200px;
+  width: auto;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #f8a1c3;
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding-bottom: 10px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #23232e;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+ul img {
+  max-width: 20px;
+}
+
+ul a {
+  display: flex;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  background: #f8a1c3;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #f581b2;
+}
+
+.btn-icon {
+  margin-right: 10px;
+}
+
+.btn-text {
+  font-size: 16px;
+}
+
+#carrinho {
+  position: absolute;
+  left: 90%;
+}
+
+header {
+  background-color: #ec9cbe;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* produtos */
+h2 {
+  font-size: 24px;
+  color: #f581b2;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 2px 2px 1px 2px #e6606060;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ec9fbfc7;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #e6606060;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #524952;
+}
+
+.label-float label {
+  color: #ec9cbe;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+button {
+  background-color: transparent;
+  border-color: #ec9fbfc7;
+  color: #ec9cbe;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-out;
+}
+
+button:hover {
+  background-color: #ec9cbe;
+  color: #fff;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #ec9cbe;
+}
+
+.card {
+  background: #fff;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card span {
+  color: #ec9cbe;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card button {
+  margin-top: 1rem;
+  background: #ec9cbe;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #ee7aaa;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.produtos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/*acessibilidade */
+.acessibilidade {
+  display: flex;
+  gap: 10px;
+  background-color: #f581b2;
+  padding: 10px;
+}
+
+.acessibilidade a {
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+body.modo-escuro {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+body.modo-escuro .card {
+  background-color: #333;
+  border-color: #555;
+}
+
+.acessibilidade a i {
+  margin-right: 5px;
+}
+
+/* Estilo do Pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f581b2;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fade-in-out 3s ease-in-out forwards;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

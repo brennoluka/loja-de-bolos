@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doce Encanto</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- link para os icones da acessibilidade -->
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="acessibilidade">
+        <a class="diminuir" onclick="diminuirFonte()">
+          <i class="fas fa-minus"></i>Diminuir Letra</a
+        >
+        <a class="normal" onclick="resetarFonte()">
+          <i class="fas fa-font"></i>Normal</a
+        >
+        <a class="aumentar" onclick="aumentarFonte()">
+          <i class="fas fa-plus"></i>Aumentar Letra</a
+        >
+        <a class="escuro" onclick="modoEscuro()">
+          <i class="fas fa-adjust"></i>Contraste</a
+        >
+      </div>
+    </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="img/logo4.png"
+              alt="Descrição da imagem"
+              style="width: 150px; height: auto"
+            />
+          </a>
+        </div>
+        <ul class="nav-list">
+          <a href="paginas/login.html" class="btn">
+            <img src="img/login.png" alt="login" class="btn-icon" /><span
+              class="btn-text"
+              >Login</span
+            >
+          </a>
+
+          <a href="paginas/loja.html" class="btn">
+            <img src="img/tag.png" alt="produtos" class="btn-icon" /><span
+              class="btn-text"
+              >Produtos</span
+            >
+          </a>
+
+          <a href="paginas/carrinho.html" class="btn" id="carrinho">
+            <img src="img/carrinho.png" alt="carrinho" class="btn-icon" /><span
+              class="btn-text"
+              >Carrinho</span
+            >
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="produtos/caixa1.jpg" alt="Imagem 1" />
+        <img src="produtos/caixa2.jpg" alt="Imagem 2" />
+        <img src="produtos/caixa3.jpg" alt="Imagem 3" />
+      </div>
+      <div class="overlay">
+        <h1>Bem-vindo ao Mundo dos Bolos e Doces</h1>
+        <p>Sabor e beleza em cada mordida!</p>
+        <a href="paginas/loja.html" class="btn">Nossos Produtos</a>
+      </div>
+    </div>
+  
+    <div style="text-align: center;">
+      <h1>Sobre Nós</h1>
+      <p>
+        Na Doce Encanto, criamos momentos inesquecíveis com nossos bolos e doces
+        personalizados. Nossa paixão é transformar cada pedido em uma obra-prima
+        saborosa e única!
+      </p>
+      <p>
+        Explore nossa loja e descubra delícias feitas com ingredientes
+        selecionados e amor em cada detalhe.
+      </p>
+      <img class="fundo1" src="img/fundo1.jpg" alt="fundo1">
+      <p>
+        Deixe-se levar pelos doces encantos e explore os melhores sabores da confeitaria.
+      </p>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links-and-social">
+        <h3>Doce Encanto</h3>
+        <p>Sabor e beleza em cada mordida.</p><br>
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="paginas/loja.html">Produtos</a></li>
+          <div class="footer-info">
+        </ul><br>
+        <h4>Siga-nos</h4>
+        <div class="footer-social">
+          <a href="https://facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://youtube.com/" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Doce Encanto. Todos os direitos reservados.</p>
+    </div>
+    </div>  
+  </footer>
+  <script src="script.js"></script>
+</html>
