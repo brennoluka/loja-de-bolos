@@ -7,7 +7,7 @@ Este site foi desenvolvido com *HTML, **CSS* e *JavaScript*, simulando uma exper
 
 ## 📸 Prévia
 
-![Preview do site](./img/preview.png)  
+![Preview do site](./img/preview.jpg)  
 
 
 ---
